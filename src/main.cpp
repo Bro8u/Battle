@@ -25,7 +25,7 @@ void glfwKeyCallback(GLFWwindow* window, int key, int scancode, int action, int 
 
 int main(void)
 {
-	GLFWwindow* window;
+	/*GLFWwindow* window;*/
 
 	/* Initialize the library */
 	if (!glfwInit()) {
@@ -38,7 +38,7 @@ int main(void)
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	/* Create a windowed mode window and its OpenGL context */
-	window = glfwCreateWindow(g_windowSizeX, g_windowSizeY, "BATTLE", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(g_windowSizeX, g_windowSizeY, "BATTLE", NULL, NULL);
 	if (!window)
 	{
 		std::cout << "glfwCreateWindow failed" << std::endl;
